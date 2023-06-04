@@ -72,7 +72,7 @@ public class queue extends javax.swing.JFrame {
     }
     private void prosesAntrian(){
         if(antrian.isEmpty()){
-            JOptionPane.showMessageDialog(this, "Ambil Nomor antrian terlebih dahulu !");
+            JOptionPane.showMessageDialog(this, "Ambil nomor antrian terlebih dahulu!");
         }
         txtAntrian.setText("");
         
