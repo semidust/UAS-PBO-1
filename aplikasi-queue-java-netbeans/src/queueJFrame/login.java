@@ -117,27 +117,19 @@ public class login extends javax.swing.JFrame {
                 tField_passwordMouseClicked(evt);
             }
         });
-        getContentPane().add(tField_password, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 310, 230, 30));
+        getContentPane().add(tField_password, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 300, 230, 20));
 
         tField_username.setBackground(new java.awt.Color(244, 229, 225));
         tField_username.setFont(new java.awt.Font("Tw Cen MT", 0, 18)); // NOI18N
         tField_username.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         tField_username.setBorder(null);
         tField_username.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
-        tField_username.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                tField_usernameFocusGained(evt);
-            }
-            public void focusLost(java.awt.event.FocusEvent evt) {
-                tField_usernameFocusLost(evt);
-            }
-        });
         tField_username.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tField_usernameActionPerformed(evt);
             }
         });
-        getContentPane().add(tField_username, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 230, 230, 40));
+        getContentPane().add(tField_username, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 210, 230, 40));
 
         btnLogin.setBackground(new java.awt.Color(159, 44, 21));
         btnLogin.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
@@ -151,9 +143,9 @@ public class login extends javax.swing.JFrame {
                 btnLoginActionPerformed(evt);
             }
         });
-        getContentPane().add(btnLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 380, 120, 40));
+        getContentPane().add(btnLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 360, 120, 40));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/queueJFrame/login (2).png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/queueJFrame/login.png"))); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 810, 590));
 
         pack();
@@ -194,20 +186,6 @@ public class login extends javax.swing.JFrame {
     private void tField_usernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tField_usernameActionPerformed
 
     }//GEN-LAST:event_tField_usernameActionPerformed
-
-    private void tField_usernameFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_tField_usernameFocusLost
-        String uss = tField_username.getText();
-        if(uss.equals("")){
-            tField_username.setText("username");
-        }
-    }//GEN-LAST:event_tField_usernameFocusLost
-
-    private void tField_usernameFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_tField_usernameFocusGained
-        String uss = tField_username.getText();
-        if(uss.equals("username")){
-            tField_username.setText("");
-        }
-    }//GEN-LAST:event_tField_usernameFocusGained
               
     /**
      * @param args the command line arguments
