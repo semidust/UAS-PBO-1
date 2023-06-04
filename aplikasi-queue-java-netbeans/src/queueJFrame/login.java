@@ -59,12 +59,12 @@ public class login extends javax.swing.JFrame {
 
         jColorChooser1 = new javax.swing.JColorChooser();
         jPanel1 = new javax.swing.JPanel();
-        jPanel4 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
-        tField_username = new javax.swing.JTextField();
+        jPanel3 = new javax.swing.JPanel();
+        jFrame1 = new javax.swing.JFrame();
         tField_password = new javax.swing.JPasswordField();
+        tField_username = new javax.swing.JTextField();
         btnLogin = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -77,18 +77,53 @@ public class login extends javax.swing.JFrame {
             .addGap(0, 100, Short.MAX_VALUE)
         );
 
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout jFrame1Layout = new javax.swing.GroupLayout(jFrame1.getContentPane());
+        jFrame1.getContentPane().setLayout(jFrame1Layout);
+        jFrame1Layout.setHorizontalGroup(
+            jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        jFrame1Layout.setVerticalGroup(
+            jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(153, 153, 153));
         setBounds(new java.awt.Rectangle(0, 0, 0, 0));
+        setMaximumSize(new java.awt.Dimension(809, 585));
+        setMinimumSize(new java.awt.Dimension(809, 585));
+        setPreferredSize(new java.awt.Dimension(809, 585));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
-        jLabel1.setText("Welcome to USU's Hospital Queue");
+        tField_password.setBackground(new java.awt.Color(244, 229, 225));
+        tField_password.setFont(new java.awt.Font("Tw Cen MT", 0, 18)); // NOI18N
+        tField_password.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        tField_password.setBorder(null);
+        tField_password.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        tField_password.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tField_passwordMouseClicked(evt);
+            }
+        });
+        getContentPane().add(tField_password, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 310, 230, 30));
 
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
-
-        tField_username.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        tField_username.setText("username"); // NOI18N
-        tField_username.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 255), 2));
+        tField_username.setBackground(new java.awt.Color(244, 229, 225));
+        tField_username.setFont(new java.awt.Font("Tw Cen MT", 0, 18)); // NOI18N
+        tField_username.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        tField_username.setBorder(null);
+        tField_username.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         tField_username.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 tField_usernameFocusGained(evt);
@@ -102,134 +137,70 @@ public class login extends javax.swing.JFrame {
                 tField_usernameActionPerformed(evt);
             }
         });
+        getContentPane().add(tField_username, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 230, 230, 40));
 
-        tField_password.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        tField_password.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 51, 255), 2));
-        tField_password.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tField_passwordActionPerformed(evt);
-            }
-        });
-
-        btnLogin.setBackground(new java.awt.Color(0, 0, 255));
-        btnLogin.setFont(new java.awt.Font("Segoe UI Semibold", 0, 14)); // NOI18N
+        btnLogin.setBackground(new java.awt.Color(159, 44, 21));
+        btnLogin.setFont(new java.awt.Font("Tw Cen MT", 1, 18)); // NOI18N
         btnLogin.setForeground(new java.awt.Color(255, 255, 255));
         btnLogin.setText("LOGIN\n");
-        btnLogin.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnLogin.setBorder(null);
+        btnLogin.setBorderPainted(false);
+        btnLogin.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         btnLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnLoginActionPerformed(evt);
             }
         });
+        getContentPane().add(btnLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 380, 120, 40));
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(109, 109, 109)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(tField_username, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(tField_password, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(141, 141, 141)
-                        .addComponent(btnLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(89, Short.MAX_VALUE))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(27, 27, 27)
-                .addComponent(tField_username, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(30, 30, 30)
-                .addComponent(tField_password, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26)
-                .addComponent(btnLogin)
-                .addContainerGap(32, Short.MAX_VALUE))
-        );
-
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(60, 60, 60)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(32, Short.MAX_VALUE))
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(19, 19, 19)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 24, Short.MAX_VALUE)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(17, 17, 17)
-                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(12, Short.MAX_VALUE))
-        );
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/queueJFrame/login (2).png"))); // NOI18N
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 810, 590));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-     
-    private void tField_usernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tField_usernameActionPerformed
-      
-    }//GEN-LAST:event_tField_usernameActionPerformed
-         
-    private void tField_passwordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tField_passwordActionPerformed
-
-    }//GEN-LAST:event_tField_passwordActionPerformed
 
     private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
-       String uss = tField_username.getText();
-       String pass = tField_password.getText();
-       String passnew = md5Java(pass);
-       
-        
+        String uss = tField_username.getText();
+        String pass = tField_password.getText();
+        String passnew = md5Java(pass);
+
         try {
-        Statement s = DBConnector.connection.createStatement();
+            Statement s = DBConnector.connection.createStatement();
 
-        String sql = "SELECT * FROM login WHERE Username = '" + uss
-                     + "' AND Password = '" + passnew + "'";
+            String sql = "SELECT * FROM login WHERE Username = '" + uss
+            + "' AND Password = '" + passnew + "'";
 
-        ResultSet r = s.executeQuery(sql);
-        if (r.next()) {
-            queue frame = new queue();
-            JOptionPane.showMessageDialog(null, "Login Success");
-            frame.setVisible(true);
-            this.dispose();
-        } else {
-            JOptionPane.showMessageDialog(null, "Login Failed");
-            tField_password.requestFocus();
+            ResultSet r = s.executeQuery(sql);
+            if (r.next()) {
+                queue frame = new queue();
+                JOptionPane.showMessageDialog(null, "Login Success");
+                frame.setVisible(true);
+                this.dispose();
+            } else {
+                JOptionPane.showMessageDialog(null, "Login Failed");
+                tField_password.requestFocus();
+            }
+            r.close();
+            s.close();
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e);
         }
-        r.close();
-        s.close();
-    } catch (Exception e) {
-        JOptionPane.showMessageDialog(null, e);
-    }
     }//GEN-LAST:event_btnLoginActionPerformed
+
+    private void tField_passwordMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tField_passwordMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tField_passwordMouseClicked
+
+    private void tField_usernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tField_usernameActionPerformed
+
+    }//GEN-LAST:event_tField_usernameActionPerformed
+
+    private void tField_usernameFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_tField_usernameFocusLost
+        String uss = tField_username.getText();
+        if(uss.equals("")){
+            tField_username.setText("username");
+        }
+    }//GEN-LAST:event_tField_usernameFocusLost
 
     private void tField_usernameFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_tField_usernameFocusGained
         String uss = tField_username.getText();
@@ -237,14 +208,7 @@ public class login extends javax.swing.JFrame {
             tField_username.setText("");
         }
     }//GEN-LAST:event_tField_usernameFocusGained
-
-    private void tField_usernameFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_tField_usernameFocusLost
-        String uss = tField_username.getText();
-        if(uss.equals("")){
-            tField_username.setText("username"); 
-        }
-    }//GEN-LAST:event_tField_usernameFocusLost
-
+              
     /**
      * @param args the command line arguments
      */
@@ -283,10 +247,10 @@ public class login extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnLogin;
     private javax.swing.JColorChooser jColorChooser1;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JFrame jFrame1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel3;
     private javax.swing.JPasswordField tField_password;
     private javax.swing.JTextField tField_username;
     // End of variables declaration//GEN-END:variables
