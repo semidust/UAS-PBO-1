@@ -35,7 +35,7 @@ public class queue extends javax.swing.JFrame {
             public void actionPerformed(ActionEvent e) {
             
                 Date date = new Date();
-                SimpleDateFormat s = new SimpleDateFormat("yyyy-MM-dd             hh:mm:ss");
+                SimpleDateFormat s = new SimpleDateFormat("yyyy-MM-dd  hh:mm:ss");
                 txtAtas3.setText(s.format(date));
             }
         
@@ -47,9 +47,6 @@ public class queue extends javax.swing.JFrame {
         lbTotalAntrian.setText("0");
         lbPanggilAntrian.setText("-----");
         
-        //txtAtas.setText("RS USU");
-        //txtAtas1.setText("Jl. Dr. Mansyur No.66, Merdeka, Kec. Medan Baru");
-        //txtAtas2.setText("Kota Medan, Sumatera Utara 20154");
         
         txtAtas4.setText("Nomor Antrian");
         txtAtas5.setText("--------");
@@ -204,7 +201,6 @@ public class queue extends javax.swing.JFrame {
         txtAntrian.setBackground(new java.awt.Color(255, 255, 255));
         txtAntrian.setColumns(20);
         txtAntrian.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
-        txtAntrian.setForeground(new java.awt.Color(0, 0, 0));
         txtAntrian.setRows(5);
         jScrollPane2.setViewportView(txtAntrian);
         txtAntrian.getAccessibleContext().setAccessibleDescription("");
@@ -225,7 +221,7 @@ public class queue extends javax.swing.JFrame {
         txtAtas3.setFont(new java.awt.Font("Helvetica Neue", 0, 15)); // NOI18N
         txtAtas3.setForeground(new java.awt.Color(255, 255, 255));
         txtAtas3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jPanel5.add(txtAtas3, new org.netbeans.lib.awtextra.AbsoluteConstraints(809, 86, 184, 27));
+        jPanel5.add(txtAtas3, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 80, 184, 27));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/queueJFrame/Background.png"))); // NOI18N
         jPanel5.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));

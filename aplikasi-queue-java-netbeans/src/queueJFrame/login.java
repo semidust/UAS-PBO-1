@@ -87,7 +87,7 @@ public class login extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
         tField_username.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        tField_username.setText("username");
+        tField_username.setText("username"); // NOI18N
         tField_username.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 255), 2));
         tField_username.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
@@ -104,7 +104,6 @@ public class login extends javax.swing.JFrame {
         });
 
         tField_password.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        tField_password.setText("admin");
         tField_password.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 51, 255), 2));
         tField_password.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -212,8 +211,8 @@ public class login extends javax.swing.JFrame {
         try {
         Statement s = DBConnector.connection.createStatement();
 
-        String sql = "SELECT * FROM login WHERE Username = '" + tField_username.getText()
-                     + "' AND Password = '" + tField_password.getText() + "'";
+        String sql = "SELECT * FROM login WHERE Username = '" + uss
+                     + "' AND Password = '" + passnew + "'";
 
         ResultSet r = s.executeQuery(sql);
         if (r.next()) {
